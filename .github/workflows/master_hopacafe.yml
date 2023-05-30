@@ -92,7 +92,6 @@ jobs:
 
     - name: npm install, build
       run: |
-        cd server
         npm install
         npm run build
 
