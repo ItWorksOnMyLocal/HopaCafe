@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -84,9 +83,8 @@ async function startServer() {
     // Serve barista client
     app.use('/barista', express.static('barista/build'));
 
-    const port = process.env.PORT || 5000;
-    app.listen(port, () => {
-      console.log(`Server started on port ${port}`);
+    app.listen(process.env.PORT, () => {
+      console.log(`Server started on port ${process.env.PORT}`);
     });
   } catch (error) {
     console.error('Failed to start server:', error);
