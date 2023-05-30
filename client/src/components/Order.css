@@ -1,0 +1,61 @@
+
+  
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: url('/public/images/coffePhoto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 82vh; /* Set the height to 100% of the viewport height */
+    border-radius: 8px;
+  }  
+
+  .order-container {
+    position: relative;
+  }
+  
+  .error-message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    color: black
+  }
+  
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+
+  label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    vertical-align: middle;
+  }
+  

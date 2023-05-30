@@ -1,0 +1,102 @@
+
+.order-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+.order-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-box p {
+  margin-bottom: 5px;
+}
+
+.order-box .order-info {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.order-box .order-name {
+  margin-right: 10px;
+}
+
+.order-box .done-button {
+  background-color: yellow;
+  color: yellow;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-box .done-button:hover {
+  background-color: #350f14;
+}
+
+.clear-all-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px; /* Adjust padding to make the button larger */
+  background-color: green; /* Set the background color to green */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for a rounded look */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* 
+.order-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+.order-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-box p {
+  margin-bottom: 5px;
+}
+
+.order-box .order-info {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.order-box .order-name {
+  margin-right: 10px;
+}
+
+.order-box .done-button {
+  background-color: yellow;
+  color: yellow;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-box .done-button:hover {
+  background-color: #350f14;
+}
+
+ */
+
+
+
