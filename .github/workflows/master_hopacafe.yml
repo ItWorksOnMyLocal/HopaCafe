@@ -90,10 +90,11 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
 
-    - name: npm install, build
-      run: |
-        npm install
-        npm run build
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build
+      run: npm run build
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
