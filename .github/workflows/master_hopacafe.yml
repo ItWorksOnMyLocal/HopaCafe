@@ -50,6 +50,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
+          images: client/public/images/coffePhoto.png
           app-name: 'HopaCafe'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D26AB893751A4722AEB64A465D24CC15 }}
