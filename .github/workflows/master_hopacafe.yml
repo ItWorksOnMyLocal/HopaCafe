@@ -78,6 +78,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: 'server'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '18.x'                # set this to the node version to use
   ACTIONS_STEP_DEBUG: true
+  CI: true
 
 jobs:
   build:
@@ -100,7 +101,7 @@ jobs:
 
     - name: Build
       working-directory: server
-      run: npm run build --verbose
+      run: npm run start
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
