@@ -68,6 +68,8 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
+name: Build and deploy Node.js app to Azure Web App - HopaCafe
+
 on:
   push:
     branches:
@@ -83,17 +85,14 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v3
 
     - name: Set up Node.js version
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ env.NODE_VERSION }}    
-
-    - name: Print Node.js version
-      run: |
-        echo "Node.js version: ${{ env.NODE_VERSION }}"
 
     - name: Install dependencies
       working-directory: server
@@ -101,7 +100,7 @@ jobs:
 
     - name: Build
       working-directory: server
-      run: npm run start
+      run: npm run build
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
