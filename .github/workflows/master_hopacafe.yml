@@ -74,9 +74,10 @@ on:
       - master
 
 env:
-  AZURE_WEBAPP_NAME: HopaCafe   # set this to your application's name
+  AZURE_WEBAPP_NAME: hopa-cafe   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: 'server'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '18.x'                # set this to the node version to use
+  ACTIONS_STEP_DEBUG: true
 
 jobs:
   build:
@@ -87,7 +88,11 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '18.x'    
+        node-version: ${{ env.NODE_VERSION }}    
+
+    - name: Print Node.js version
+      run: |
+        echo "Node.js version: ${{ env.NODE_VERSION }}"
 
     - name: Install dependencies
       working-directory: server
