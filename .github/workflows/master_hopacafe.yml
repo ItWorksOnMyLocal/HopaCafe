@@ -100,7 +100,7 @@ jobs:
 
     - name: Build
       working-directory: server
-      run: npm run build
+      run: npm run build -- verbose
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
@@ -108,7 +108,7 @@ jobs:
         name: hopa-cafe
         path: server
 
-        
+
   deploy:
     runs-on: windows-latest
     needs: build
