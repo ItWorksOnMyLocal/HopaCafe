@@ -128,5 +128,5 @@ jobs:
       with:
         images: client/public/images/coffePhoto.png
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D26AB893751A4722AEB64A465D24CC15 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12340000 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
